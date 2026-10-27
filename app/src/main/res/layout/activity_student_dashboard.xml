@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F7EE"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DineDesk"
+            android:textColor="#720D2B"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Welcome, Student!"
+            android:textColor="#343434"
+            android:textSize="27sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"
+            android:text="Select items to pre-order"
+            android:textColor="#555555"
+            android:textSize="16sp"/>
+
+        <!-- SNACKS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🍿 SNACKS"
+            android:textColor="#720D2B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="12dp"
+            android:background="#720D2B"/>
+
+        <!-- Cutlet -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cutlet"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹20.0 • ~3 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddCutlet"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Samosa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Samosa"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹15.0 • ~3 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddSamosa"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Chicken Puffs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken Puffs"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹25.0 • ~4 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddChickenPuffs"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Meat Roll -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meat Roll"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹25.0 • ~4 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddMeatRoll"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Burger -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burger"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹60.0 • ~5 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddBurger"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- MAIN COURSE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="🍛 MAIN COURSE"
+            android:textColor="#720D2B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="12dp"
+            android:background="#720D2B"/>
+
+        <!-- Chicken Biriyani -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken Biriyani"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹100.0 • ~6 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddChickenBiriyani"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Veg Fried Rice -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veg Fried Rice"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹70.0 • ~6 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddRice"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Chicken Fried Rice -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken Fried Rice"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹80.0 • ~6 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddChickenFriedRice"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Meals -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meals"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹50.0 • ~5 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddMeals"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+
+        <!-- BEVERAGES -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="☕ BEVERAGES"
+            android:textColor="#720D2B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="12dp"
+            android:background="#720D2B"/>
+
+        <!-- Tea -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tea"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹15.0 • ~2 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddTea"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Coffee -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coffee"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹20.0 • ~2 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddCoffee"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Fresh Juice -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fresh Juice"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹40.0 • ~4 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddJuice"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- DESSERTS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="🍨 DESSERTS"
+            android:textColor="#720D2B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="12dp"
+            android:background="#720D2B"/>
+
+        <!-- Ice Cream -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ice Cream"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹35.0 • ~2 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddIceCream"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Cake -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F7EAEA"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cake"
+                    android:textColor="#454545"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="₹40.0 • ~3 mins prep"
+                    android:textColor="#720D2B"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddCake"
+                android:layout_width="96dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#800020"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- CART SUMMARY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#720D2B"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/tvCartCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cart: 0 items"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvCartTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Total: ₹0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Checkout"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6B2737"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnOrderHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Order History"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
